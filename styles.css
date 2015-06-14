@@ -13,17 +13,17 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+
 #cssmenu {
   width: 200px;
   font-family: Helvetica, Arial, sans-serif;
   color: #ffffff;
 }
+
 #cssmenu ul ul {
   display: none;
 }
-.align-right {
-  float: right;
-}
+
 #cssmenu > ul > li > a {
   padding: 15px 20px;
   border-left: 1px solid #1682ba;
@@ -55,14 +55,16 @@
   background: -ms-linear-gradient(#1fa0e4, #1992d1);
   background: linear-gradient(#1fa0e4, #1992d1);
 }
+
 #cssmenu > ul > li.open > a {
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.15);
   border-bottom: 1px solid #1682ba;
 }
-#cssmenu > ul > li:last-child > a,
-#cssmenu > ul > li.last > a {
+
+#cssmenu > ul > li:last-child > a {
   border-bottom: 1px solid #1682ba;
 }
+
 .holder {
   width: 0;
   height: 0;
@@ -90,11 +92,6 @@
   border-top: 2px solid #ffffff;
   border-left: 2px solid #ffffff;
 }
-#cssmenu > ul > li > a:hover > span::after,
-#cssmenu > ul > li.active > a > span::after,
-#cssmenu > ul > li.open > a > span::after {
-  border-color: #eeeeee;
-}
 .holder::before {
   top: 18px;
   border-top: 2px solid;
@@ -102,6 +99,12 @@
   border-top-color: inherit;
   border-left-color: inherit;
 }
+
+#cssmenu > ul > li > a:hover > span::after {
+  border-color: #eeeeee;
+}
+
+
 #cssmenu ul ul li a {
   cursor: pointer;
   border-bottom: 1px solid #32373e;
@@ -140,23 +143,6 @@
 }
 #cssmenu > ul > li > ul > li.open:last-child > ul > li:last-child > a {
   border-bottom: 0;
-}
-#cssmenu ul ul li.has-sub > a::after {
-  display: block;
-  position: absolute;
-  content: "";
-  width: 5px;
-  height: 5px;
-  right: 20px;
-  z-index: 10;
-  top: 11.5px;
-  border-top: 2px solid #eeeeee;
-  border-left: 2px solid #eeeeee;
-  -webkit-transform: rotate(-135deg);
-  -moz-transform: rotate(-135deg);
-  -ms-transform: rotate(-135deg);
-  -o-transform: rotate(-135deg);
-  transform: rotate(-135deg);
 }
 
 #cssmenu ul ul li.open > a::after,
